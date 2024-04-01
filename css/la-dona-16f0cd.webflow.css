@@ -391,7 +391,9 @@ p {
 
 
 @media screen and (max-width: 479px) {
-
+  .home-body {
+    background-position: center left;
+  }
 
   .full-page-wrapper {
     padding-bottom: 60px;
