@@ -117,21 +117,7 @@ p {
   align-items: flex-start;
 }
 
-.section {
-  position: relative;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  height: 100%;
-  min-height: 90vh;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-top: 9px solid #b02d17;
-  background-image: url('../images/asset-lace-v1.jpg');
-  background-position: 0px 0px;
-  background-size: cover;
-}
+
 
 .container {
   position: relative;
@@ -154,13 +140,39 @@ p {
   background-color: #feb5b0;
 }
 
-.div-block-4 {
+/* .div-block-4 {
   position: static;
   left: 0%;
   top: 0%;
   right: 0%;
   bottom: 0%;
+} */
+.section {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  height: 100%;
+  min-height: 90vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  /* border-top: 9px solid #b02d17; */
+  background-position: 0px 0px;
+  background-size: cover;
 }
+.div-block-4 {
+  position: relative; /* Ensures the div is positioned correctly */
+  width: 100%; /* Make sure it covers the full width */
+  min-height: 100vh;
+  /* Adjust the height as necessary, here it's set to full viewport height */
+  background-image: url('../images/Dona_NewTourScrollBkgrd.png'); 
+  background-size: cover; /* Ensure the background covers the full area of the div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
 
 .div-block-5 {
   position: absolute;
@@ -172,6 +184,7 @@ p {
 }
 
 .div-block-6 {
+  margin-top: 66px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -184,6 +197,10 @@ p {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+    max-height: 544px; /* Adjust based on your layout needs */
+    /* max-width: 500px; */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Hides horizontal scrollbar, if not needed */
 }
 
 .div-block-7 {
@@ -192,6 +209,7 @@ p {
   top: 0%;
   right: 2%;
   bottom: 0%;
+  margin-top: 10px;
 }
 
 .image-2 {
@@ -480,3 +498,11 @@ p {
   }
 }
 
+
+@media screen and (max-width: 479px) {
+  .div-block-6 {
+      margin-top: 168px;  
+      padding-top: 0; 
+      max-height: 380px; 
+  }
+}
