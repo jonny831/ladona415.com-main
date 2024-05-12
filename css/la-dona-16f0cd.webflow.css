@@ -287,8 +287,8 @@ p {
 .full-page {
   min-height: 100vh;
   padding-top: 20px;
-  padding-bottom: 100px;
-  background-image: url('../images/asset-lace-v1.jpg');
+
+  background-image: url('../images/Dona_NewHomeblank_edited_2Stars.png');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -504,5 +504,10 @@ p {
       margin-top: 168px;  
       padding-top: 0; 
       max-height: 380px; 
+  }
+}
+@media (max-width: 1024px) {
+  .div-block-7 {
+    right: -7%; /* Increase the percentage to push it more to the right */
   }
 }
